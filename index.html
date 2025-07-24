@@ -124,7 +124,7 @@
                 <li><a href="#ponto-de-partida">How It Works</a></li>
                 <li><a href="#arquitetura">Architecture</a></li>
                 <li><a href="#estudos-de-caso">Case Studies</a></li>
-                <li><a href="#tecnologia-e-custos">API Technology</a></li>
+                <li><a href="#tecnologia-e-custos">Technology & Costs</a></li>
             </ul>
         </div>
     </nav>
@@ -182,68 +182,74 @@
 
         <!-- ===== START OF PAGE 2 CONTENT (UPDATED) ===== -->
         <section id="ponto-de-partida" class="my-12 md:my-16 scroll-mt-24">
-            <h2 class="text-3xl md:text-4xl font-bold text-[#2C3E50] text-center mb-6">How It Works: The Verification Flow</h2>
+            <h2 class="text-4xl font-bold text-[#2C3E50] text-center mb-6">How It Works: The Detailed Verification Flow</h2>
+            
+            <h3 class="text-3xl font-bold text-[#2C3E50] text-center mb-6">1. The Starting Point: From the Interface to the Assistant</h3>
             <p class="text-center text-lg text-slate-700 max-w-3xl mx-auto mb-10">
-                The process is initiated using only public, non-sensitive data from the internal system. The tool was designed to protect user privacy, ensuring no sensitive information is ever required for the analysis. This public data is then transformed into a structured query for our AI tool.
+                The process begins when an agent identifies a bet for verification in the system. Our tool extracts the essential data and formats it into a query for the AI.
             </p>
             
             <div class="workflow-card border-[#3498DB] max-w-3xl mx-auto mb-8">
-                <h3 class="text-xl font-semibold text-[#3498DB] mb-3 text-center">1. Data Origin: The YODA Interface</h3>
-                <p class="text-slate-600 mb-4 text-center">The process begins when an agent identifies a bet for verification in the system. The agent then extracts only the necessary, non-sensitive data directly from this known interface:</p>
+                <h4 class="text-xl font-semibold text-[#3498DB] mb-3 text-center">a. Data Origin: The YODA Interface</h4>
+                <p class="text-slate-600 mb-4 text-center">The raw bet data is captured directly from the internal system's interface.</p>
                 <div class="output-example-container">
-                    <img src="https://raw.githubusercontent.com/riohdigital/rio-digital-hub-connect/4e9d1a6114181e68b9f78f7cbbe791068372f3f7/public/Apresenta%C3%A7%C3%A3o%20agente%20de%20resultados%20-%20Hospedagem%20das%20Imagens/Sessa%CC%83o%20de%20Informac%CC%A7o%CC%83es%20da%20Aposta%20YODA.png" alt="Screenshot of the YODA interface showing the data of a bet for Santos vs Botafogo.">
+                    <img src="https://raw.githubusercontent.com/riohdigital/rio-digital-hub-connect/4e9d1a6114181e68b9f78f7cbbe791068372f3f7/public/Apresenta%C3%A7%C3%A3o%20agente%20de%20resultados%20-%20Hospedagem%20das%20Imagens/Sessa%CC%83o%20de%20Informac%CC%A7o%CC%83es%20da%20Aposta%20YODA.png" alt="Screenshot of the YODA interface showing bet data for Santos vs Botafogo.">
                 </div>
-            </div>
-        
-            <div class="workflow-arrow text-center text-4xl md:text-5xl">⬇️</div>
-
-            <div class="workflow-card border-[#2ECC71] max-w-2xl mx-auto mt-8">
-                <h3 class="text-xl font-semibold text-[#2ECC71] mb-3 text-center">2. The Query Sent to the Assistant</h3>
-                <p class="text-slate-600 mb-4 text-center">The extracted data is formatted into a clear query and sent to the AI Agent to begin the analysis.</p>
-                <div class="output-example-container">
-                    <img src="https://raw.githubusercontent.com/riohdigital/rio-digital-hub-connect/acb6036fc496abe53d2178e3670ec8b692c8712d/public/Apresenta%C3%A7%C3%A3o%20agente%20de%20resultados%20-%20Hospedagem%20das%20Imagens/Pergunta%20do%20Agente%20Interno%20-%20Santos%20v%20Botafogo%20-%20Sportsbook..png" alt="Agent Query Interface with bet details.">
-                </div>
-            </div>
-
-            <div class="workflow-arrow text-center text-4xl md:text-5xl">⬇️</div>
-
-            <h2 class="text-3xl md:text-4xl font-bold text-[#2C3E50] text-center mb-6 mt-12">Anatomy of a Complete Report</h2>
-            <p class="text-center text-lg text-slate-700 max-w-3xl mx-auto mb-10">
-                After processing, the tool generates a multi-faceted report to ensure total clarity for both the internal agent and the end customer.
-            </p>
-             
-            <div class="report-block-card">
-                <h3 class="text-2xl font-semibold text-[#3498DB] mb-3">Structured Response for the Customer</h3>
-                <p class="text-slate-600 mb-4">The tool generates professional and easy-to-understand communication to be sent to the customer, explaining the reason for the decision based on official data.</p>
-                <img src="https://raw.githubusercontent.com/riohdigital/rio-digital-hub-connect/acb6036fc496abe53d2178e3670ec8b692c8712d/public/Apresenta%C3%A7%C3%A3o%20agente%20de%20resultados%20-%20Hospedagem%20das%20Imagens/Bloco%204%20Relato%CC%81rio%20do%20Assistente%20-%20Respota%20para%20Cliente%20Final%20-%20Santos%20v%20Botafogo%20-%20Sem%20Escalac%CC%A7a%CC%83o%20-%20Sportsbook%20-%20PT-BR.png" alt="Block 4 of the Report: Response for the end customer" class="output-example-container">
             </div>
             
-            <!-- NEW PROOF OF VALUE SECTION -->
-            <div class="report-block-card mt-12 border-l-8 border-red-500 bg-red-50/50">
-                <h3 class="text-2xl font-semibold text-red-600 mb-3">Proof of Value: Incorrect Settlement Correction</h3>
-                <p class="text-slate-700 mb-4">In this specific case, the bet was originally settled in the system as <strong>WON</strong>. However, our tool correctly identified that the result should be <strong>LOST</strong>, acting as a critical layer of auditing and correction.</p>
-                <p class="text-slate-700 mb-6"><strong>The Reason:</strong> The bet was "Over 6.5 cards". The manual card count in the game was inflated by a common error: a player (Neymar) received 2 yellow cards and 1 red card. According to betting rules, a second yellow card that leads to a red card counts as only one red card (value 2), not as three separate cards. Our tool applied this rule with precision, calculated the correct total of cards (which was less than 6.5), and determined the loss of the bet.</p>
-                
-                <h4 class="font-semibold text-center text-lg text-gray-800">Evidence of the Correct Analysis:</h4>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-4 p-4 bg-red-100/50 rounded-lg">
-                    <div>
-                        <h5 class="font-semibold text-center mb-2">1. Settled Bet (Incorrect)</h5>
-                        <img src="https://raw.githubusercontent.com/riohdigital/rio-digital-hub-connect/7b46a0d968dcb8819d2156eebe09ec8c93c0cbd8/public/Logo%20and%20final%20proofs/1.%20Aposta%20Liquidada%20(Incorreta).png" class="analysis-container" alt="Original bet showing result 'W' (won).">
-                    </div>
-                    <div>
-                        <h5 class="font-semibold text-center mb-2">2. Game Timeline</h5>
-                        <img src="https://raw.githubusercontent.com/riohdigital/rio-digital-hub-connect/7b46a0d968dcb8819d2156eebe09ec8c93c0cbd8/public/Logo%20and%20final%20proofs/2.%20Linha%20do%20Tempo%20do%20Jogo.png" class="analysis-container" alt="Match timeline showing cards and events.">
-                    </div>
-                    <div>
-                        <h5 class="font-semibold text-center mb-2">3. Player Statistics</h5>
-                        <img src="https://raw.githubusercontent.com/riohdigital/rio-digital-hub-connect/7b46a0d968dcb8819d2156eebe09ec8c93c0cbd8/public/Logo%20and%20final%20proofs/3.%20Estat%C3%ADsticas%20do%20Jogador.png" class="analysis-container" alt="Neymar's statistics showing 1 red card (RC) and 2 yellow cards (YC).">
-                    </div>
-                </div>
-                <div class="conclusion-box mt-6 !border-red-500">
-                    <p><strong>Case Conclusion:</strong> This example is the definitive proof of the tool's value. It not only automates but acts as a security layer, identifying and correcting costly settlement errors that would otherwise go unnoticed, protecting revenue and ensuring fairness in the result.</p>
+            <div class="workflow-arrow">⬇️</div>
+
+            <div class="workflow-card border-[#2ECC71] max-w-2xl mx-auto mt-8">
+                <h4 class="text-xl font-semibold text-[#2ECC71] mb-3 text-center">b. The Query Sent to the AI Assistant</h4>
+                <p class="text-slate-600 mb-4 text-center">The extracted data is formatted into a clear query and sent to the AI Agent to begin the analysis.</p>
+                <div class="output-example-container">
+                    <img src="https://raw.githubusercontent.com/riohdigital/rio-digital-hub-connect/acb6036fc496abe53d2178e3670ec8b692c8712d/public/Apresenta%C3%A7%C3%A3o%20agente%20de%20resultados%20-%20Hospedagem%20das%20Imagens/Pergunta%20do%20Agente%20Interno%20-%20Santos%20v%20Botafogo%20-%20Sportsbook..png" alt="Agent's Query Interface with bet details.">
                 </div>
             </div>
 
+            <div class="workflow-arrow">⬇️</div>
+
+            <h3 class="text-3xl md:text-4xl font-bold text-[#2C3E50] text-center mb-6">2. Anatomy of a Complete Report</h3>
+            <p class="text-center text-lg text-slate-700 max-w-3xl mx-auto mb-10">Let's analyze in detail each component of a report generated by the tool, using the "Santos vs Botafogo" case as an example.</p>
+            
+            <div class="report-block-card"><h4 class="text-2xl font-semibold text-[#3498DB] mb-3">Block 1: Bet Data and Initial Verification</h4><div class="grid grid-cols-1 md:grid-cols-2 gap-4"><img src="https://raw.githubusercontent.com/riohdigital/rio-digital-hub-connect/acb6036fc496abe53d2178e3670ec8b692c8712d/public/Apresenta%C3%A7%C3%A3o%20agente%20de%20resultados%20-%20Hospedagem%20das%20Imagens/Bloco%201.1%20Relato%CC%81rio%20do%20Assistente%20-%20Dados%20da%20Busca%20-%20Santos%20v%20Botafogo%20-%20Sem%20Escalac%CC%A7a%CC%83o%20-%20Sportsbook%20-%20PT-BR.png" alt="Block 1.1 of the Report"><img src="https://raw.githubusercontent.com/riohdigital/rio-digital-hub-connect/acb6036fc496abe53d2178e3670ec8b692c8712d/public/Apresenta%C3%A7%C3%A3o%20agente%20de%20resultados%20-%20Hospedagem%20das%20Imagens/Bloco%201.2%20Relato%CC%81rio%20do%20Assistente%20-%20Dados%20da%20Busca%20-%20Santos%20v%20Botafogo%20-%20Sem%20Escalac%CC%A7a%CC%83o%20-%20Sportsbook%20-%20PT-BR.png" alt="Block 1.2 of the Report"></div><p class="mt-4 text-slate-600"><strong>Purpose:</strong> Records the bet data, consulted sources, and official match data (score, cards, etc.) obtained from the main API.</p></div>
+            <div class="report-block-card"><h4 class="text-2xl font-semibold text-[#3498DB] mb-3">Block 2: Comparison Logic and Rule Analysis</h4><img src="https://raw.githubusercontent.com/riohdigital/rio-digital-hub-connect/acb6036fc496abe53d2178e3670ec8b692c8712d/public/Apresenta%C3%A7%C3%A3o%20agente%20de%20resultados%20-%20Hospedagem%20das%20Imagens/Bloco%202%20Relato%CC%81rio%20do%20Assistente%20-%201%2A%20Informac%CC%A7o%CC%83es%20-%20Santos%20v%20Botafogo%20-%20Sem%20Escalac%CC%A7a%CC%83o%20-%20Sportsbook%20-%20PT-BR.png" alt="Block 2 of the Report"><p class="mt-4 text-slate-600"><strong>Purpose:</strong> Details the tool's reasoning, including statistics counting and verification of special rules (2UP, Safe Sub, etc.).</p></div>
+            <div class="report-block-card"><h4 class="text-2xl font-semibold text-[#3498DB] mb-3">Block 3.1: Conclusion and Information for the Agent</h4><img src="https://raw.githubusercontent.com/riohdigital/rio-digital-hub-connect/acb6036fc496abe53d2178e3670ec8b692c8712d/public/Apresenta%C3%A7%C3%A3o%20agente%20de%20resultados%20-%20Hospedagem%20das%20Imagens/Bloco%203.1%20Relato%CC%81rio%20do%20Assistente%20-%20Resultados%20para%20o%20Agente%20-%20Santos%20v%20Botafogo%20-%20Sem%20Escalac%CC%A7a%CC%83o%20-%20Sportsbook%20-%20PT-BR.png" alt="Block 3.1 of the Report"><p class="mt-4 text-slate-600"><strong>Purpose:</strong> Presents the final verification result (RFV), comparing the correct result (RCA) with the original (ROI), with a detailed justification.</p></div>
+            <div class="report-block-card"><h4 class="text-2xl font-semibold text-[#3498DB] mb-3">Block 3.2 (Optional): Links for Verification</h4><img src="https://raw.githubusercontent.com/riohdigital/rio-digital-hub-connect/acb6036fc496abe53d2178e3670ec8b692c8712d/public/Apresenta%C3%A7%C3%A3o%20agente%20de%20resultados%20-%20Hospedagem%20das%20Imagens/Bloco%203.2%20Relato%CC%81rio%20do%20Assistente%20-%20Resultados%20para%20o%20Agente%20%22Links%22%20(Opcional)%20-%20Santos%20v%20Botafogo%20-%20Sem%20Escalac%CC%A7a%CC%83o%20-%20Sportsbook%20-%20PT-BR.png" alt="Block 3.2 of the Report"><p class="mt-4 text-slate-600"><strong>Purpose:</strong> Provides direct links to official data sources, increasing transparency and allowing for quick manual auditing.</p></div>
+            <div class="report-block-card"><h4 class="text-2xl font-semibold text-[#3498DB] mb-3">Block 4: Structured Response for the Customer</h4><img src="https://raw.githubusercontent.com/riohdigital/rio-digital-hub-connect/acb6036fc496abe53d2178e3670ec8b692c8712d/public/Apresenta%C3%A7%C3%A3o%20agente%20de%20resultados%20-%20Hospedagem%20das%20Imagens/Bloco%204%20Relato%CC%81rio%20do%20Assistente%20-%20Respota%20para%20Cliente%20Final%20-%20Santos%20v%20Botafogo%20-%20Sem%20Escalac%CC%A7a%CC%83o%20-%20Sportsbook%20-%20PT-BR.png" alt="Block 4 of the Report"><p class="mt-4 text-slate-600"><strong>Purpose:</strong> Generates a clear and professional communication to be sent to the customer, explaining the result of their dispute.</p></div>
+            <div class="report-block-card"><h4 class="text-2xl font-semibold text-[#3498DB] mb-3">Block 5: Match Summary and Additional Interaction</h4><img src="https://raw.githubusercontent.com/riohdigital/rio-digital-hub-connect/acb6036fc496abe53d2178e3670ec8b692c8712d/public/Apresenta%C3%A7%C3%A3o%20agente%20de%20resultados%20-%20Hospedagem%20das%20Imagens/Bloco%205%20Relato%CC%81rio%20do%20Assistente%20-%20Resumo%20da%20Partida%20e%20Perguntas%20sobre%20o%20Jogo%20-%20Santos%20v%20Botafogo%20-%20Sem%20Escalac%CC%A7a%CC%83o%20-%20Sportsbook%20-%20PT-BR.png" alt="Block 5 of the Report"><p class="mt-4 text-slate-600"><strong>Purpose:</strong> Provides a quick summary of the match and allows the agent to ask additional questions about the game if necessary.</p></div>
+                            <div class="case-study-card">
+                <h3 class="text-3xl font-bold mb-2">Proof of Value: Settlement Error Correction</h3>
+                <p class="text-slate-600 mb-4">In this case, the bet was originally settled as <strong>WON</strong>. Our tool correctly identified that the result should be <strong>LOST</strong>, acting as an audit and correction layer.</p>
+                <p class="text-slate-600 mb-6"><strong>The Reason:</strong> The bet was "Over 6.5 cards". The manual count was inflated by a common error: a player (Neymar) received 2 yellow cards and 1 red card. The correct rule (applied by the tool) considers that the second yellow leading to a red card counts as a single red card (value 2), not as three separate events.</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-4 p-4 bg-red-100/50 rounded-lg">
+                    <div><h5 class="font-semibold text-center mb-2">1. Settled Bet (Incorrect)</h5><img src="https://raw.githubusercontent.com/riohdigital/rio-digital-hub-connect/7b46a0d968dcb8819d2156eebe09ec8c93c0cbd8/public/Logo%20and%20final%20proofs/1.%20Aposta%20Liquidada%20(Incorreta).png" class="analysis-container" alt="Original bet settled as 'W'."></div>
+                    <div><h5 class="font-semibold text-center mb-2">2. Game Timeline</h5><img src="https://raw.githubusercontent.com/riohdigital/rio-digital-hub-connect/7b46a0d968dcb8819d2156eebe09ec8c93c0cbd8/public/Logo%20and%20final%20proofs/2.%20Linha%20do%20Tempo%20do%20Jogo.png" class="analysis-container" alt="Timeline of the match."></div>
+                    <div><h5 class="font-semibold text-center mb-2">3. Player Statistics</h5><img src="https://raw.githubusercontent.com/riohdigital/rio-digital-hub-connect/7b46a0d968dcb8819d2156eebe09ec8c93c0cbd8/public/Logo%20and%20final%20proofs/3.%20Estati%CC%81sticas%20do%20Jogador.png" class="analysis-container" alt="Player's statistics."></div>
+                </div>
+                <div class="conclusion-box mt-6 !border-red-500"><p><strong>Case Conclusion:</strong> The tool not only automates but also acts as a security layer, identifying and correcting costly settlement errors, protecting revenue, and ensuring fairness.</p></div>
+            </div>
+            
+            <div class="workflow-arrow">⬇️</div>
+            
+            <div class="report-block-card border-l-4 border-[#F1C40F]">
+                <h3 class="text-2xl font-semibold text-[#0A2F51] mb-3">The "Reasoning" in Action and the Final Response</h3>
+                <p class="text-slate-700 mb-4">
+                    After a complex orchestration, the tool develops the reasoning to evaluate the massive set of information and offer a concise, clear, and reliable response.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+                     <div class="sub-tech-card"><h4 class="text-xl font-semibold mb-2 text-[#3498DB]">The LLM's "Reasoning":</h4><div class="image-container-tech"><img src="https://raw.githubusercontent.com/riohdigital/rio-digital-hub-connect/e12f41b59ee2a37a3f53a62e487e36727dd80c82/public/Engenharia%20por%20tr%C3%A1s%20do%20Agente%20-%20Hospedagem%20das%20Imagens/LLM%20Thinking.png" alt="Example of the LLM's thought process log."></div></div>
+                     <div class="sub-tech-card"><h4 class="text-xl font-semibold mb-2 text-[#3498DB]">Final Output (for Agent):</h4><div class="image-container-tech"><img src="https://raw.githubusercontent.com/riohdigital/rio-digital-hub-connect/c05b1df0e459da65ff56ec235ce4b7b8840e8695/public/Engenharia%20por%20tr%C3%A1s%20do%20Agente%20-%20Hospedagem%20das%20Imagens/OutPut%20Final.png?raw=true" alt="Example of the tool's final output."></div></div>
+                </div>
+            </div>
+
+            <div class="workflow-arrow">⬇️</div>
+
+            <h3 class="text-3xl md:text-4xl font-bold text-[#2C3E50] text-center mb-6">3. Closing the Loop: Confirmation of Resolution</h3>
+            <p class="text-center text-lg text-slate-700 max-w-3xl mx-auto mb-10">The tool tracks the resolution, as demonstrated by the agents' confirmations after the AI Agent's intervention or validation.</p>
+            <div class="output-example-container">
+                <div class="workflow-card border-[#2ECC71]"><h4 class="text-lg font-semibold text-center text-[#2ECC71] mb-2">Validation (Santos vs Botafogo)</h4><img src="https://raw.githubusercontent.com/riohdigital/rio-digital-hub-connect/acb6036fc496abe53d2178e3670ec8b692c8712d/public/Apresenta%C3%A7%C3%A3o%20agente%20de%20resultados%20-%20Hospedagem%20das%20Imagens/Confirmac%CC%A7a%CC%83o%20do%20Resultado%20-%20Santos%20v%20Botafogo.png" alt="Confirmation of correct settlement."><p class="text-xs text-slate-500 mt-2 text-center">Agent confirms the original settlement was correct.</p></div>
+            </div>
         </section>
         <!-- ===== END OF PAGE 2 CONTENT ===== -->
 
@@ -293,11 +299,11 @@
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 analysis-container">
                     <div>
                         <h4 class="font-semibold mb-2">Internal Analysis and Applied Rule:</h4>
-                        <img src="https://cdn.jsdelivr.net/gh/riohdigital/rio-digital-hub-connect@main/public/Casos%20onde%20n%C3%A3o%20precisariam%20ter%20sido%20escalados/1.png" alt="Internal discussion about the rule of 2 yellow cards leading to a red one.">
+                        <img src="https://cdn.jsdelivr.net/gh/riohdigital/rio-digital-hub-connect@ddc4859c69d114a082d279cc4c93a3c7477948db/public/Casos%20onde%20n%C3%A3o%20precisariam%20ter%20sido%20escalados/1.png" alt="Internal discussion about the rule of 2 yellow cards leading to a red one.">
                     </div>
                     <div>
                         <h4 class="font-semibold mb-2">Final Response Generated for the Customer:</h4>
-                        <img src="https://cdn.jsdelivr.net/gh/riohdigital/rio-digital-hub-connect@main/public/Casos%20onde%20n%C3%A3o%20precisariam%20ter%20sido%20escalados/2.png" alt="Response to the customer explaining that the total cards for the player was 2.">
+                        <img src="https://cdn.jsdelivr.net/gh/riohdigital/rio-digital-hub-connect@ddc4859c69d114a082d279cc4c93a3c7477948db/public/Casos%20onde%20n%C3%A3o%20precisariam%20ter%20sido%20escalados/2.png" alt="Response to the customer explaining that the total cards for the player was 2.">
                     </div>
                 </div>
                 <div class="conclusion-box">
@@ -311,11 +317,11 @@
                  <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 analysis-container">
                     <div>
                         <h4 class="font-semibold mb-2">Internal Analysis and Applied Rule:</h4>
-                        <img src="https://cdn.jsdelivr.net/gh/riohdigital/rio-digital-hub-connect@main/public/Casos%20onde%20n%C3%A3o%20precisariam%20ter%20sido%20escalados/3.png" alt="Internal discussion about the Half Time/Full Time bet.">
+                        <img src="https://cdn.jsdelivr.net/gh/riohdigital/rio-digital-hub-connect@ddc4859c69d114a082d279cc4c93a3c7477948db/public/Casos%20onde%20n%C3%A3o%20precisariam%20ter%20sido%20escalados/3.png" alt="Internal discussion about the Half Time/Full Time bet.">
                     </div>
                     <div>
                         <h4 class="font-semibold mb-2">Final Response Generated for the Customer:</h4>
-                        <img src="https://cdn.jsdelivr.net/gh/riohdigital/rio-digital-hub-connect@main/public/Casos%20onde%20n%C3%A3o%20precisariam%20ter%20sido%20escalados/4.png" alt="Response to the customer explaining the logic of the halftime and full-time result.">
+                        <img src="https://cdn.jsdelivr.net/gh/riohdigital/rio-digital-hub-connect@ddc4859c69d114a082d279cc4c93a3c7477948db/public/Casos%20onde%20n%C3%A3o%20precisariam%20ter%20sido%20escalados/4.png" alt="Response to the customer explaining the logic of the halftime and full-time result.">
                     </div>
                 </div>
                 <div class="conclusion-box">
@@ -329,11 +335,11 @@
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 analysis-container">
                     <div>
                         <h4 class="font-semibold mb-2">Internal Analysis and Applied Rule:</h4>
-                        <img src="https://cdn.jsdelivr.net/gh/riohdigital/rio-digital-hub-connect@main/public/Casos%20onde%20n%C3%A3o%20precisariam%20ter%20sido%20escalados/7.png" alt="Discussion about a handicap result leading to a draw.">
+                        <img src="https://cdn.jsdelivr.net/gh/riohdigital/rio-digital-hub-connect@ddc4859c69d114a082d279cc4c93a3c7477948db/public/Casos%20onde%20n%C3%A3o%20precisariam%20ter%20sido%20escalados/7.png" alt="Discussion about a handicap result leading to a draw.">
                     </div>
                     <div>
                         <h4 class="font-semibold mb-2">Final Response Generated for the Customer:</h4>
-                        <img src="https://cdn.jsdelivr.net/gh/riohdigital/rio-digital-hub-connect@main/public/Casos%20onde%20n%C3%A3o%20precisariam%20ter%20sido%20escalados/8.png" alt="Response to the customer explaining that the handicap resulted in a draw and the bet was lost.">
+                        <img src="https://cdn.jsdelivr.net/gh/riohdigital/rio-digital-hub-connect@ddc4859c69d114a082d279cc4c93a3c7477948db/public/Casos%20onde%20n%C3%A3o%20precisariam%20ter%20sido%20escalados/8.png" alt="Response to the customer explaining that the handicap resulted in a draw and the bet was lost.">
                     </div>
                 </div>
                 <div class="conclusion-box">
@@ -347,11 +353,11 @@
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 analysis-container">
                     <div>
                         <h4 class="font-semibold mb-2">Internal Analysis and Applied Rule:</h4>
-                        <img src="https://cdn.jsdelivr.net/gh/riohdigital/rio-digital-hub-connect@main/public/Casos%20onde%20n%C3%A3o%20precisariam%20ter%20sido%20escalados/9.png" alt="Discussion about the Safe Substitution rule and eligible leagues.">
+                        <img src="https://cdn.jsdelivr.net/gh/riohdigital/rio-digital-hub-connect@ddc4859c69d114a082d279cc4c93a3c7477948db/public/Casos%20onde%20n%C3%A3o%20precisariam%20ter%20sido%20escalados/9.png" alt="Discussion about the Safe Substitution rule and eligible leagues.">
                     </div>
                     <div>
                         <h4 class="font-semibold mb-2">Final Response Generated for the Customer:</h4>
-                        <img src="https://cdn.jsdelivr.net/gh/riohdigital/rio-digital-hub-connect@main/public/Casos%20onde%20n%C3%A3o%20precisariam%20ter%20sido%20escalados/10.png" alt="Response to the customer informing that the rule does not apply to the bet's competition.">
+                        <img src="https://cdn.jsdelivr.net/gh/riohdigital/rio-digital-hub-connect@ddc4859c69d114a082d279cc4c93a3c7477948db/public/Casos%20onde%20n%C3%A3o%20precisariam%20ter%20sido%20escalados/10.png" alt="Response to the customer informing that the rule does not apply to the bet's competition.">
                     </div>
                 </div>
                 <div class="conclusion-box">
